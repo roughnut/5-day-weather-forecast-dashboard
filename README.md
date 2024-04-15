@@ -14,7 +14,7 @@ Challenge is to build a weather dashboard with a 5-day forecast that will run in
 
 ## Usage
 
-[Github Pages URL](github_pages_url "link to deployed site")
+[Github Pages URL](https://roughnut.github.io/5-day-weather-forecast-dashboard/ "link to deployed site")
 
 ## User Story
 

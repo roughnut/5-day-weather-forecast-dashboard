@@ -41,7 +41,7 @@ function storeCity(city) {
 }
 
 function getCityLatLon(city) {
-  const cityQueryUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${weatherApiKey}`;
+  const cityQueryUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${weatherApiKey}`;
   fetch(cityQueryUrl)
     .then((response) => response.json())
     .then((data) => {
@@ -60,8 +60,8 @@ function getLatitudeLongitude(data) {
 }
 
 function getWeatherData(latitude, longitude) {
-  const currentWeatherQueryUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${weatherApiKey}&units=metric`;
-  const forecastWeatherQueryUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${weatherApiKey}&units=metric`;
+  const currentWeatherQueryUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${weatherApiKey}&units=metric`;
+  const forecastWeatherQueryUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${weatherApiKey}&units=metric`;
 
   fetch(currentWeatherQueryUrl)
     .then((response) => response.json())
@@ -88,7 +88,7 @@ function currentWeatherData(data) {
   const temp = Math.round(data.main.temp *10) / 10;
   const humidity = data.main.humidity;
   const windSpeed = Math.round(data.wind.speed * 10) / 10;
-  const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+  const iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
   appendCurrentData(city, date, temp, humidity, windSpeed, iconUrl);
 }
 
@@ -128,7 +128,7 @@ function forecastWeatherData(data) {
       const humidity = data.list[i].main.humidity;
       const windSpeed = Math.round(data.list[i].wind.speed * 10) / 10;
       const icon = data.list[i].weather[0].icon;
-      const iconUrl = `http://openweathermap.org/img/wn/${icon}.png`;
+      const iconUrl = `https://openweathermap.org/img/wn/${icon}.png`;
       appendForecastData(date, temp, humidity, windSpeed, iconUrl);
     }
   }

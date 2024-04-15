@@ -1,0 +1,19 @@
+
+#saved-cities, .card-title, #current-weather ul, #forecast-weather ul {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+#saved-cities li {
+    background-color: lightgray;
+    margin: 0.5rem;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#forecast-weather .card {
+    display: flex;
+    justify-content: space-between;
+}

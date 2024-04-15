@@ -6,11 +6,11 @@ Challenge is to build a weather dashboard with a 5-day forecast that will run in
 
 [User Story](#user-story) and [Acceptance Criteria](#acceptance-criteria) are below.
 
-Also included below is my [Process & Learnings](#process--learnings) section.
+
 
 ## Screenshot
 
-<!-- ![screenshot](path_to_screenshot "link to screenshot") --> Screenshot coming soon
+![screenshot](./assets/images/app-screenshot.png "link to screenshot")
 
 ## Usage
 
@@ -37,5 +37,3 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
-
-## Process & Learnings
